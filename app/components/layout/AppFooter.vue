@@ -7,7 +7,7 @@
           <span class="invitation-eyebrow">A Pocket of Serenity</span>
           <h3 class="invitation-title">Experience the Beauty of Cana Gardens</h3>
           <p class="invitation-desc">
-            Schedule a private walkthrough across our manicured lawns and scenic terraces.
+            Schedule a private walkthrough across our manicured grounds and scenic terraces.
           </p>
         </div>
         <div class="invitation-action">
@@ -40,7 +40,7 @@
 
           <p class="footer-bio">
             An intimate countryside sanctuary located 10KM from Nairobi off Kiambu Road.
-            Lush rolling lawns, tranquil breezes, and timeless celebrations.
+            Lush rolling grounds, tranquil breezes, and timeless celebrations.
           </p>
 
           <div class="footer-tagline">

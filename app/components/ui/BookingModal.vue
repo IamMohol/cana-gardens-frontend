@@ -113,7 +113,7 @@
               id="message" 
               v-model="form.message" 
               rows="3" 
-              placeholder="Tell us about catering needs, lawn preferences, decor requirements, etc."
+              placeholder="Tell us about catering needs, setup requirements, decor plans, etc."
               required
             ></textarea>
           </div>

@@ -24,10 +24,10 @@
             <div class="service-icon-tag"><i class="fas fa-ring"></i> Wedding Ceremonies &amp; Receptions</div>
             <h2>Say “I Do” in an Enchanting Countryside Haven</h2>
             <p>
-              Your wedding day deserves an extraordinary venue. Cana Gardens offers spacious manicured lawns allowing your ceremony and reception to be held within one seamless location without logistical stress for your guests.
+              Your wedding day deserves an extraordinary venue. Cana Gardens offers spacious manicured grounds allowing your ceremony and celebration to be hosted within one tranquil countryside location.
             </p>
             <ul class="service-features">
-              <li><i class="fas fa-check"></i> Dedicated ceremony &amp; reception lawns with scenic backdrop</li>
+              <li><i class="fas fa-check"></i> Spacious manicured event grounds with scenic backdrop</li>
               <li><i class="fas fa-check"></i> Dedicated bridal suite and private staging areas</li>
               <li><i class="fas fa-check"></i> High-capacity secure parking for up to 400 cars</li>
               <li><i class="fas fa-check"></i> Flexible catering pavilions and vendor access</li>

@@ -23,7 +23,7 @@
           <div class="card-media-wrapper">
             <img 
               src="/img/garden_view.png" 
-              alt="Outdoor Wedding Ceremony Lawns at Cana Gardens" 
+              alt="Outdoor Wedding Grounds at Cana Gardens" 
               class="card-img"
               loading="lazy"
             />
@@ -37,11 +37,11 @@
           <div class="card-body">
             <h3 class="card-title">Weddings &amp; Receptions</h3>
             <p class="card-description">
-              Enchanting garden vows and grand open-air banquets surrounded by manicured lawns and panoramic countryside views.
+              Enchanting garden vows and grand open-air banquets surrounded by manicured grounds and panoramic countryside views.
             </p>
             <div class="card-highlights">
               <span class="highlight-item"><i class="fas fa-check" aria-hidden="true"></i> Up to 700 banquet guests</span>
-              <span class="highlight-item"><i class="fas fa-check" aria-hidden="true"></i> Dedicated ceremony lawns</span>
+              <span class="highlight-item"><i class="fas fa-check" aria-hidden="true"></i> Manicured event grounds</span>
             </div>
           </div>
         </article>

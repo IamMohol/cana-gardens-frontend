@@ -74,15 +74,15 @@
             </p>
           </article>
 
-          <!-- Spec 3: Dual-Zone Architecture -->
+          <!-- Spec 3: Common Grounds & Amenities -->
           <article class="spec-tile spec-tile-wide" style="--tile-delay: 0.3s">
             <div class="tile-tag">
-              <i class="fas fa-layer-group" aria-hidden="true"></i>
-              <span>Dual Lawn Architecture</span>
+              <i class="fas fa-seedling" aria-hidden="true"></i>
+              <span>Common Grounds &amp; Amenities</span>
             </div>
-            <h3 class="spec-title">Seamless Ceremony &amp; Banquet Flow</h3>
+            <h3 class="spec-title">Shared Estate Grounds &amp; Essential Amenities</h3>
             <p class="spec-description">
-              Two connected yet distinct lawn zones allow couples and hosts to seamlessly transition from vows or executive presentations to dinner receptions without venue turnaround delay.
+              Hire includes access to our continuous manicured grounds, garden gazebos, and key on-site facilities. We encourage visitors to schedule a walkthrough to inspect the space in person and decide if it meets your event vision.
             </p>
           </article>
 
