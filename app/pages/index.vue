@@ -6,7 +6,7 @@
       @open-booking="openBooking" 
     />
 
-    <!-- 4 Interactive 3D Flip Cards -->
+    <!-- Grounds Experiences & Packages Overview -->
     <FlipCardsSection />
 
     <!-- Video Experience Showcase -->
@@ -15,11 +15,8 @@
       :poster-url="homeData?.site_setting?.video_poster"
     />
 
-    <!-- Our Garden Highlights Section -->
-    <OurGardenSection />
-
-    <!-- Trending Activities (Photoshoots, Birthday, Picnic, Events) -->
-    <TrendingActivitiesSection @open-booking="openBooking" />
+    <!-- Grounds Architecture & Estate Dossier -->
+    <OurGardenSection @open-booking="openBooking" />
 
     <!-- Latest Blog Posts -->
     <LatestBlogSection :posts="homeData?.latest_posts" />
@@ -35,7 +32,6 @@ import HeroSection from '~/components/home/HeroSection.vue'
 import FlipCardsSection from '~/components/home/FlipCardsSection.vue'
 import VideoShowcase from '~/components/home/VideoShowcase.vue'
 import OurGardenSection from '~/components/home/OurGardenSection.vue'
-import TrendingActivitiesSection from '~/components/home/TrendingActivitiesSection.vue'
 import LatestBlogSection from '~/components/home/LatestBlogSection.vue'
 import QuickCallToAction from '~/components/home/QuickCallToAction.vue'
 
