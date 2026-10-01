@@ -147,7 +147,7 @@
           class="btn btn-gold"
           style="width: 100%"
         >
-          <i class="fas fa-calendar-check"></i> Inquire / Book Venue
+          <i class="fas fa-calendar-check"></i> Book a Tour
         </button>
       </div>
     </div>
@@ -162,21 +162,38 @@ defineEmits(["open-booking"]);
 
 const isScrolled = ref(false);
 const isMobileMenuOpen = ref(false);
-
 const { isDarkMode, toggleTheme } = useTheme();
 
-const handleScroll = () => {
-  if (typeof window !== "undefined") {
-    isScrolled.value = window.scrollY > 30;
-  }
-};
+let observer: IntersectionObserver | null = null;
 
 onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
+  if (typeof window !== "undefined" && "IntersectionObserver" in window) {
+    const sentinel = document.createElement("div");
+    sentinel.setAttribute("aria-hidden", "true");
+    sentinel.style.position = "absolute";
+    sentinel.style.top = "0";
+    sentinel.style.left = "0";
+    sentinel.style.width = "100%";
+    sentinel.style.height = "24px";
+    sentinel.style.pointerEvents = "none";
+    sentinel.style.opacity = "0";
+    document.body.prepend(sentinel);
+
+    observer = new IntersectionObserver(
+      ([entry]) => {
+        isScrolled.value = !entry.isIntersecting;
+      },
+      { threshold: 0 }
+    );
+    observer.observe(sentinel);
+  }
 });
 
 onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll);
+  if (observer) {
+    observer.disconnect();
+    observer = null;
+  }
 });
 </script>
 
@@ -187,9 +204,17 @@ onUnmounted(() => {
   left: 0;
   width: 100%;
   z-index: 900;
-  background: var(--color-bg-card);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--color-border);
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-normal);
+}
+
+html.dark .site-header {
+  background: rgba(17, 34, 19, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .site-header.scrolled {
@@ -198,10 +223,11 @@ onUnmounted(() => {
 
 .top-bar {
   background: var(--color-primary-950);
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.825rem;
-  padding: 0.45rem 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.8rem;
+  padding: 0.35rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: max-height var(--transition-normal), opacity var(--transition-normal);
 }
 
 html.dark .top-bar {
@@ -221,7 +247,7 @@ html.dark .top-bar {
 }
 
 .info-item i {
-  color: var(--color-gold-400);
+  color: var(--color-accent-400);
   margin-right: 0.35rem;
 }
 
@@ -232,7 +258,7 @@ html.dark .top-bar {
 }
 
 .phone-link {
-  color: var(--color-gold-300);
+  color: var(--color-accent-300);
   font-weight: 600;
 }
 
@@ -242,7 +268,7 @@ html.dark .top-bar {
 
 .social-links {
   display: flex;
-  gap: 0.8rem;
+  gap: 0.6rem;
 }
 
 .social-links a {
@@ -255,16 +281,25 @@ html.dark .top-bar {
   justify-content: center;
   font-size: 0.75rem;
   color: #ffffff;
-  transition: background var(--transition-fast);
+  transition: all var(--transition-fast);
 }
 
 .social-links a:hover {
-  background: var(--color-gold-500);
+  background: var(--color-accent-500);
+  transform: translateY(-1px);
+}
+
+.social-links a:active {
+  transform: translateY(0) scale(0.95);
 }
 
 .main-navigation {
-  padding: 0.9rem 0;
-  background: var(--color-bg-card);
+  padding: 0.6rem 0;
+  transition: padding var(--transition-normal);
+}
+
+.site-header.scrolled .main-navigation {
+  padding: 0.4rem 0;
 }
 
 .nav-container {
@@ -280,12 +315,16 @@ html.dark .top-bar {
 }
 
 .brand-logo-img {
-  height: 60px; /* Adjust based on logo proportions */
+  height: 48px;
   width: auto;
   max-width: none;
   object-fit: contain;
   display: block;
-  transition: transform var(--transition-fast);
+  transition: height var(--transition-normal), transform var(--transition-fast);
+}
+
+.site-header.scrolled .brand-logo-img {
+  height: 42px;
 }
 
 .brand-logo-img:hover {
@@ -299,16 +338,21 @@ html.dark .top-bar {
 .nav-list {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1.75rem;
   align-items: center;
 }
 
 .nav-list a {
-  font-size: 0.95rem;
+  font-size: 0.925rem;
   font-weight: 500;
   color: var(--color-primary-900);
   position: relative;
-  padding: 0.4rem 0;
+  padding: 0.35rem 0;
+  transition: color var(--transition-fast);
+}
+
+html.dark .nav-list a {
+  color: #f0f7f1;
 }
 
 .nav-list a::after {
@@ -318,8 +362,9 @@ html.dark .top-bar {
   left: 0;
   width: 0%;
   height: 2px;
-  background: var(--color-gold-500);
+  background: var(--color-accent-500);
   transition: width var(--transition-fast);
+  border-radius: 2px;
 }
 
 .nav-list a:hover::after,
@@ -332,16 +377,24 @@ html.dark .top-bar {
   font-weight: 600;
 }
 
+html.dark .nav-list a.active {
+  color: var(--color-accent-400);
+}
+
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.85rem;
+}
+
+.header-actions .btn:active {
+  transform: translateY(1px) scale(0.98);
 }
 
 .theme-toggle {
   background: transparent;
-  border: none;
-  font-size: 1.25rem;
+  border: 1px solid var(--color-border);
+  font-size: 1rem;
   color: var(--color-primary-900);
   cursor: pointer;
   display: flex;
@@ -353,12 +406,22 @@ html.dark .top-bar {
   transition: all var(--transition-fast);
 }
 
+html.dark .theme-toggle {
+  color: #f0f7f1;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
 .theme-toggle:hover {
   background: rgba(0, 0, 0, 0.05);
+  transform: scale(1.05);
 }
 
 html.dark .theme-toggle:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
 }
 
 .mobile-toggle {

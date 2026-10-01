@@ -35,12 +35,14 @@ provide('openBookingModal', openBookingModal)
 
 <style scoped>
 .site-layout {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
 }
 
 #main-content {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 </style>
