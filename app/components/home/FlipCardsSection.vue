@@ -69,7 +69,6 @@
             </p>
             <div class="card-highlights">
               <span class="highlight-item"><i class="fas fa-check" aria-hidden="true"></i> Flowering tree arches</span>
-              <span class="highlight-item"><i class="fas fa-check" aria-hidden="true"></i> Half-day &amp; full-day passes</span>
             </div>
           </div>
         </article>
@@ -97,7 +96,6 @@
             </p>
             <div class="card-highlights">
               <span class="highlight-item"><i class="fas fa-check" aria-hidden="true"></i> Power backup &amp; PA setup</span>
-              <span class="highlight-item"><i class="fas fa-check" aria-hidden="true"></i> High-speed WiFi &amp; breakout lawns</span>
             </div>
           </div>
         </article>
@@ -107,12 +105,12 @@
           <div class="card-media-wrapper">
             <img 
               src="/img/custom/Image-23.JPG" 
-              alt="Private Celebrations & Lawn Picnics at Cana Gardens" 
+              alt="Private Celebrations & Gatherings at Cana Gardens" 
               class="card-img"
               loading="lazy"
             />
             <div class="card-media-scrim"></div>
-            <span class="card-accent-pill">Leisure &amp; Picnics</span>
+            <span class="card-accent-pill">Private Gatherings</span>
             <div class="card-icon-badge" aria-hidden="true">
               <i class="fas fa-glass-cheers"></i>
             </div>
@@ -121,11 +119,10 @@
           <div class="card-body">
             <h3 class="card-title">Private Celebrations</h3>
             <p class="card-description">
-              Relaxed garden picnics, milestone birthday gatherings, baby showers, and intimate anniversaries under shaded gazebos.
+              Milestone birthday gatherings, baby showers, and intimate family celebrations under shaded gazebos.
             </p>
             <div class="card-highlights">
-              <span class="highlight-item"><i class="fas fa-check" aria-hidden="true"></i> Shaded picnic gazebos</span>
-              <span class="highlight-item"><i class="fas fa-check" aria-hidden="true"></i> Flexible lawn layouts</span>
+              <span class="highlight-item"><i class="fas fa-check" aria-hidden="true"></i> Shaded garden gazebos</span>
             </div>
           </div>
         </article>
