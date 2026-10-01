@@ -93,12 +93,12 @@ const { data: apiGallery } = await useFetch<any[]>(`${config.public.apiBase}/gal
 const defaultItems = [
   { id: 1, title: 'Cana Gardens Panorama', category: 'gardens', image_url: 'https://canagardens.co.ke/wp-content/uploads/2022/01/Paradise-Gardens-view.jpeg', caption: 'Lush 1-acre manicured sanctuary' },
   { id: 2, title: 'Wedding Ceremonies & Mandap', category: 'weddings', image_url: 'https://canagardens.co.ke/wp-content/uploads/elementor/thumbs/Paradise-Gardens-weddings-events-scaled-pjlia5mw353fr3ks278c0zxa7ce40gqk5pbnwpvzew.jpg', caption: 'Enchanting floral and arch setups' },
-  { id: 3, title: 'Lakeside Corporate Pavilion', category: 'corporate', image_url: 'https://canagardens.co.ke/wp-content/uploads/elementor/thumbs/Paradise-Gardens-corporate-events-scaled-pjli9mu4agdpawc33z3sn4o2bmyrqinxf49yb6nuvc.jpg', caption: 'Inspiring outdoor setting for teams' },
+  { id: 3, title: 'Garden Corporate Pavilion', category: 'corporate', image_url: 'https://canagardens.co.ke/wp-content/uploads/elementor/thumbs/Paradise-Gardens-corporate-events-scaled-pjli9mu4agdpawc33z3sn4o2bmyrqinxf49yb6nuvc.jpg', caption: 'Inspiring outdoor setting for teams' },
   { id: 4, title: 'Bridal Photoshoot on Lawn', category: 'photoshoot', image_url: 'https://canagardens.co.ke/wp-content/uploads/elementor/thumbs/Paradise-Gardens-Photo-shoot-events-pjliln7vm8tlniw0z606i3k3kvrm3acgekdb2gurd4.jpg', caption: 'Romantic sunset vistas' },
   { id: 5, title: 'Family Lawn Picnic', category: 'picnics', image_url: 'https://canagardens.co.ke/wp-content/uploads/elementor/thumbs/Paradise-Gardens-picnic-events1-pjli9zzuy4vptfsyz4skm1cin15wqa464xer124cg8.jpeg', caption: 'Relaxing outdoor leisure' },
   { id: 6, title: 'Photoshoot Locations', category: 'gardens', image_url: '/img/photo_shoots.png', caption: 'Beautiful lush backgrounds' },
   { id: 7, title: 'Evening Reception Glow', category: 'weddings', image_url: 'https://canagardens.co.ke/wp-content/uploads/elementor/thumbs/Paradise-Gardens-weddings-events1-scaled-pjliaf19zhgaz774jbalpxjw573s5frvizuiphi1oo.jpeg', caption: 'Fairytale ambiance after sunset' },
-  { id: 8, title: 'Waterfront Event Deck', category: 'gardens', image_url: '/img/events_showers.png', caption: 'Beautiful waterfront setups for events' },
+  { id: 8, title: 'Garden Event Deck', category: 'gardens', image_url: '/img/events_showers.png', caption: 'Beautiful outdoor setups for events' },
 ]
 
 const galleryItems = computed(() => {

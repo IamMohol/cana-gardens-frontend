@@ -52,10 +52,10 @@
               <div class="info-card">
                 <div class="card-icon"><i class="far fa-clock"></i></div>
                 <div class="card-body">
-                  <h4>Visiting Hours</h4>
+                  <h4>Visiting &amp; Viewing Hours</h4>
                   <p>
                     Grounds Open Daily: <strong>{{ appConfig.contact.openingHours }}</strong><br />
-                    Tour Consultations: <strong>{{ appConfig.contact.viewingHours }}</strong>
+                    Viewing &amp; Site Visits: <strong>{{ appConfig.contact.viewingHours }}</strong>
                   </p>
                 </div>
               </div>
@@ -367,7 +367,7 @@ const handleSubmit = async () => {
 
 useSeoMeta({
   title: 'Contact Us | Location, Phone & Viewing Hours | Cana Gardens',
-  description: `Get in touch with Cana Gardens off Kiambu Road, Nairobi. Call ${appConfig.contact.phone} or visit us Monday through Sunday.`,
+  description: `Get in touch with Cana Gardens off Kiambu Road, Nairobi. Call ${appConfig.contact.phone} or visit us on Tuesdays and Thursdays from 11:00 AM - 2:00 PM.`,
   ogTitle: 'Contact Cana Gardens Nairobi | Inquire Venue & Viewing',
   ogDescription: 'Reach out to Cana Gardens for wedding packages, grounds viewing, and event reservations.',
 })

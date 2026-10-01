@@ -28,14 +28,14 @@
               Located just 10 kilometers from Nairobi's central business district along the scenic Kiambu Road corridor, Cana Gardens was created to provide a serene sanctuary where unforgettable memories unfold.
             </p>
             <p>
-              Set across lush, manicured lawns and anchored by an enchanting natural water body and floating deck, our venue combines authentic countryside tranquility with urban accessibility.
+              Set across lush, manicured lawns and anchored by an enchanting garden deck, our venue combines authentic countryside tranquility with urban accessibility.
             </p>
 
             <div class="highlight-boxes">
               <div class="hl-box">
                 <i class="fas fa-check-circle"></i>
                 <div>
-                  <strong>Two Dedicated Lawns</strong>
+                  <strong>Dedicated Event Lawns</strong>
                   <span>Church ceremony &amp; reception in one venue</span>
                 </div>
               </div>
@@ -49,7 +49,7 @@
               <div class="hl-box">
                 <i class="fas fa-check-circle"></i>
                 <div>
-                  <strong>Floating Deck &amp; Lake Views</strong>
+                  <strong>Signature Event Deck</strong>
                   <span>Iconic vantage point for photography</span>
                 </div>
               </div>

@@ -8,7 +8,7 @@
             <i class="fas fa-ring"></i>
           </div>
           <h3>Wedding</h3>
-          <p>Timeless garden vows &amp; luxury outdoor receptions across two lush lawns.</p>
+          <p>Timeless garden vows &amp; luxury outdoor receptions across lush manicured lawns.</p>
           <NuxtLink to="/services" class="card-link">Explore Wedding Packages &rarr;</NuxtLink>
         </div>
 
@@ -18,7 +18,7 @@
             <i class="fas fa-camera-retro"></i>
           </div>
           <h3>Photoshoot</h3>
-          <p>Stunning botanical sceneries, water deck reflections &amp; sunset vistas.</p>
+          <p>Stunning botanical sceneries, garden deck &amp; sunset vistas.</p>
           <NuxtLink to="/services" class="card-link">View Photography Zones &rarr;</NuxtLink>
         </div>
 

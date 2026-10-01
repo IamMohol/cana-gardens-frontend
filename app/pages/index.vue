@@ -52,7 +52,7 @@ const { data: homeData } = await useFetch<any>(`${config.public.apiBase}/home-da
 // Rich SEO Meta Tags matching the original site's RankMath SEO + Schema.org
 useSeoMeta({
   title: 'Welcome To Cana Gardens | Countryside Weddings & Events off Kiambu Rd',
-  description: 'Cana Gardens is a stunning countryside wedding venue located only 10KM from Nairobi. Lush gardens, floating deck, 400-car parking, and panoramic water views.',
+  description: 'Cana Gardens is a stunning countryside wedding venue located only 10KM from Nairobi. Lush gardens, garden deck, 400-car parking, and panoramic scenic views.',
   ogTitle: 'Welcome To Cana Gardens | Countryside Weddings & Events off Kiambu Rd',
   ogDescription: 'The stunning country side wedding venue you thought you would never find. Located only 10KM from Nairobi, the views are breathtaking.',
   ogImage: 'https://canagardens.co.ke/img/custom/Image-521.JPG',

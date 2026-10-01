@@ -19,7 +19,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Cana Gardens is a stunning countryside wedding and corporate events venue located only 10KM from Nairobi off Kiambu Road. Lush gardens, floating deck, 400-car parking, and panoramic water views.',
+            'Cana Gardens is a stunning countryside wedding and corporate events venue located only 10KM from Nairobi off Kiambu Road. Lush gardens, garden deck, 400-car parking, and panoramic scenic views.',
         },
         { name: 'theme-color', content: '#064e3b' },
         { property: 'og:locale', content: 'en_US' },

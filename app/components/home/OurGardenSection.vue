@@ -10,7 +10,7 @@
           <span class="decorative-line"></span>
         </div>
         <p class="garden-intro">
-          Cana Gardens, off Kiambu road, is a multiple award-winning events venue known for its lush gardens, floating deck, ample parking space, captivating views and enchanting water body. As one of Kenya’s most popular event spaces, we offer a variety of packages to suit our client’s needs.
+          Cana Gardens, off Kiambu road, is a multiple award-winning events venue known for its lush gardens, garden deck, ample parking space, and captivating views. As one of Kenya’s most popular event spaces, we offer a variety of packages to suit our client’s needs.
         </p>
       </div>
 
@@ -66,7 +66,7 @@
             <div class="feature-info">
               <h4>Best of Both Worlds</h4>
               <p>
-                Cana Gardens has two well-manicured lawns making it convenient for couples to easily have both the church ceremony as well as the reception party all in the same venue.
+                Cana Gardens features expansive, well-manicured lawns making it convenient for couples to easily host both the church ceremony as well as the reception party all in the same venue.
               </p>
             </div>
           </div>
@@ -76,9 +76,9 @@
               <i class="fas fa-calendar-check"></i>
             </div>
             <div class="feature-info">
-              <h4>Free Consultations</h4>
+              <h4>Site Visits &amp; Viewing</h4>
               <p>
-                The grounds are open for physical viewing anytime from 7:00 a.m. to 6:00 p.m. Karibu Cana Gardens to tour your dream setting!
+                The grounds are open for physical viewing and site visits on Tuesdays and Thursdays from 11:00 AM to 2:00 PM. Karibu Cana Gardens to tour your dream setting!
               </p>
             </div>
           </div>

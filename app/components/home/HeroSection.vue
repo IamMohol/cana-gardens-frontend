@@ -177,7 +177,7 @@
       <!-- Left Content Column -->
       <div class="hero-text-col">
         <div class="hero-badge">
-          <i class="fas fa-certificate"></i> Multiple Award-Winning Venue
+          <i class="fas fa-certificate"></i> Your Miracle Begins Here!
         </div>
 
         <h1 class="hero-title">Welcome to</h1>

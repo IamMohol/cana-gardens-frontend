@@ -70,7 +70,7 @@
     <section class="faq-bottom-cta">
       <div class="container text-center">
         <h2>Experience the Gardens in Person</h2>
-        <p>Grounds are open daily from 8:00 AM to 7:00 PM for private walk-throughs.</p>
+        <p>Viewing and site visits are available on Tuesdays and Thursdays from 11:00 AM to 2:00 PM.</p>
         <button @click="openBooking" class="btn btn-gold">
           <i class="fas fa-calendar-check"></i> Schedule a Viewing Tour
         </button>
@@ -100,7 +100,7 @@ const faqs = [
   {
     question: 'What is the guest capacity for weddings and receptions?',
     answer:
-      'Our 1-acre manicured grounds feature two distinct lawn areas capable of hosting from intimate gatherings of 50 to grand wedding receptions of over 700 to 1,000 guests, allowing both church ceremony and evening banquet on the same property.',
+      'Our 1-acre manicured grounds are capable of hosting from intimate gatherings of 50 to grand wedding receptions of over 700 to 1,000 guests, allowing both church ceremony and evening banquet on the same property.',
   },
   {
     question: 'How many vehicles can park on the grounds?',
@@ -113,14 +113,14 @@ const faqs = [
       'Yes! We provide complete flexibility. You are welcome to engage your preferred caterers, decorators, entertainment teams, and sound engineers. We provide dedicated catering prep pavilions, reliable power hookups, and vendor access gates.',
   },
   {
-    question: 'What is the photoshoot policy on the floating deck?',
+    question: 'What is the photoshoot policy on the garden deck?',
     answer:
-      'Our iconic floating deck and water reflections provide a signature backdrop for bridal portraits, fashion shoots, and commercial filming. Half-day and full-day photography permits are available by reservation.',
+      'Our iconic garden deck and botanical greenery provide a signature backdrop for bridal portraits, fashion shoots, and commercial filming. Half-day and full-day photography permits are available by reservation.',
   },
   {
-    question: 'What are the viewing and ground consultation hours?',
+    question: 'What are the viewing and site visit hours?',
     answer:
-      'Our grounds are open for physical tours and walkthroughs from 7:00 AM to 6:00 PM, Monday through Sunday. We recommend booking in advance so an events manager can guide you.',
+      'Our grounds are open for viewing and site visits on Tuesdays and Thursdays from 11:00 AM to 2:00 PM. We recommend booking in advance so an events manager can guide you.',
   },
   {
     question: 'How do I secure my desired event date?',

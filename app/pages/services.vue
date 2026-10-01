@@ -24,10 +24,10 @@
             <div class="service-icon-tag"><i class="fas fa-ring"></i> Wedding Ceremonies &amp; Receptions</div>
             <h2>Say “I Do” in an Enchanting Countryside Haven</h2>
             <p>
-              Your wedding day deserves an extraordinary venue. Cana Gardens offers two spacious manicured lawns allowing your ceremony and reception to be held within one seamless location without logistical stress for your guests.
+              Your wedding day deserves an extraordinary venue. Cana Gardens offers spacious manicured lawns allowing your ceremony and reception to be held within one seamless location without logistical stress for your guests.
             </p>
             <ul class="service-features">
-              <li><i class="fas fa-check"></i> Dual ceremony &amp; reception lawns with scenic water backdrop</li>
+              <li><i class="fas fa-check"></i> Dedicated ceremony &amp; reception lawns with scenic backdrop</li>
               <li><i class="fas fa-check"></i> Dedicated bridal suite and private staging areas</li>
               <li><i class="fas fa-check"></i> High-capacity secure parking for up to 400 cars</li>
               <li><i class="fas fa-check"></i> Flexible catering pavilions and vendor access</li>
@@ -50,10 +50,10 @@
             <div class="service-icon-tag"><i class="fas fa-camera-retro"></i> Professional Photography &amp; Film</div>
             <h2>Iconic Photography Zones &amp; Golden Hour Scenery</h2>
             <p>
-              From pre-wedding bridal portraits and high-fashion editorials to music video productions, our 1-acre botanical sanctuary offers an abundance of creative backgrounds including our iconic floating deck and flowering tree arches.
+              From pre-wedding bridal portraits and high-fashion editorials to music video productions, our 1-acre botanical sanctuary offers an abundance of creative backgrounds including our iconic garden deck and flowering tree arches.
             </p>
             <ul class="service-features">
-              <li><i class="fas fa-check"></i> Floating deck with water surface reflections</li>
+              <li><i class="fas fa-check"></i> Signature garden deck with panoramic sunset views</li>
               <li><i class="fas fa-check"></i> Lush green foliage and sunset views</li>
               <li><i class="fas fa-check"></i> Half-day and full-day photography passes</li>
               <li><i class="fas fa-check"></i> Dressing and makeup preparation rooms</li>
@@ -102,7 +102,7 @@
             <div class="service-icon-tag"><i class="fas fa-camera"></i> Leisure &amp; Outdoor Recreation</div>
             <h2>Photoshoots, Lawn Picnics &amp; Events</h2>
             <p>
-              Unwind with family and friends on weekends. Explore beautiful photoshoot sets, organize relaxed picnic lunches, or enjoy tranquil events and showers by the water.
+              Unwind with family and friends on weekends. Explore beautiful photoshoot sets, organize relaxed picnic lunches, or enjoy tranquil outdoor events and showers.
             </p>
             <ul class="service-features">
               <li><i class="fas fa-check"></i> Professional photo shoot sessions in lush gardens</li>

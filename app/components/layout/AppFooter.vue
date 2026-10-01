@@ -27,7 +27,7 @@
           </div>
           <p class="footer-bio">
             A multiple award-winning countryside events venue located only 10KM from Nairobi
-            off Kiambu Road. Known for lush rolling lawns, tranquil waters, and
+            off Kiambu Road. Known for lush rolling lawns, breathtaking scenery, and
             timeless memories.
           </p>
           <div class="footer-tagline">
@@ -60,7 +60,7 @@
                   appConfig.contact.openingHours
                 }}</strong>
               </p>
-              <span class="sub-badge">Ground Tours: 7am - 6pm</span>
+              <span class="sub-badge">Viewing: Tues &amp; Thu 11:00 AM - 2:00 PM</span>
             </div>
           </div>
 

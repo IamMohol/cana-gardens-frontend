@@ -18,7 +18,7 @@
           </p>
 
           <p class="trending-sub-description">
-            Whether you are arranging a family weekend picnic on the manicured lawn, a scenic birthday celebration, or peaceful events and showers by the water body, we ensure every moment is memorable.
+            Whether you are arranging a family weekend picnic on the manicured lawn, a scenic birthday celebration, or peaceful outdoor events and showers, we ensure every moment is memorable.
           </p>
 
           <div class="trending-actions">
@@ -84,7 +84,7 @@
               ></div>
               <div class="cta-overlay"></div>
               <div class="cta-content">
-                <div class="cta-icon"><i class="fas fa-fish"></i></div>
+                <div class="cta-icon"><i class="fas fa-glass-cheers"></i></div>
                 <h3 class="cta-title">Events & Showers</h3>
                 <span class="cta-link">Learn More &rarr;</span>
               </div>

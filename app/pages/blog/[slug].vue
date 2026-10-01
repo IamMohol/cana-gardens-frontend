@@ -25,7 +25,7 @@
           <div class="article-prose">
             <p>{{ post.content }}</p>
             <p>
-              Looking to host your next party, wedding celebration, or milestone event in an atmosphere of tranquility and natural beauty? Cana Gardens provides complete event grounds, parking for 400 cars, and personalized tour consultations every day from 7:00 AM to 6:00 PM.
+              Looking to host your next party, wedding celebration, or milestone event in an atmosphere of tranquility and natural beauty? Cana Gardens provides complete event grounds, parking for 400 cars, and personalized viewing and site visits on Tuesdays and Thursdays from 11:00 AM to 2:00 PM.
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@ const fallbackPosts: Record<string, any> = {
     slug: 'old-school-vibe-brunch-nairobi-a-successful-easter-event-at-paradise-gardens',
     cover_image: '/img/blog_brunch.png',
     excerpt: 'A review of the Old School & Vibe Brunch Event. Easter brought great energy to Nairobi, and Cana Gardens was the destination of choice.',
-    content: 'Our Easter Sunday Old School & Vibe Brunch welcomed hundreds of music lovers, families, and brunch enthusiasts. Guests enjoyed live DJ sets, handcrafted barbecues, cocktail lounges, and serene lakeside chillout zones across our manicured lawns.',
+    content: 'Our Easter Sunday Old School & Vibe Brunch welcomed hundreds of music lovers, families, and brunch enthusiasts. Guests enjoyed live DJ sets, handcrafted barbecues, cocktail lounges, and serene garden chillout zones across our manicured lawns.',
     category: 'Music & Brunch',
     author: 'Cana Gardens',
     published_at: '2026-04-08',
