@@ -14,66 +14,12 @@ export const useTheme = () => {
     }
   }
 
-  const toggleTheme = (event?: MouseEvent) => {
-    const isReducedMotion = typeof window !== 'undefined' &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches
-
-    const doc = (typeof document !== 'undefined' ? document : null) as any
-
-    // If View Transitions API not supported or reduced motion requested, apply standard switch
-    if (!doc || !doc.startViewTransition || isReducedMotion) {
-      isDarkMode.value = !isDarkMode.value
-      if (typeof localStorage !== 'undefined') {
-        localStorage.setItem('theme', isDarkMode.value ? 'dark' : 'light')
-      }
-      updateTheme()
-      return
+  const toggleTheme = () => {
+    isDarkMode.value = !isDarkMode.value
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('theme', isDarkMode.value ? 'dark' : 'light')
     }
-
-    // Determine circular wave origin coordinates (defaults to button coordinates or viewport center)
-    let x = event?.clientX
-    let y = event?.clientY
-    if (x === undefined || y === undefined || (x === 0 && y === 0)) {
-      const btn = doc.querySelector('.theme-toggle')
-      if (btn) {
-        const rect = btn.getBoundingClientRect()
-        x = rect.left + rect.width / 2
-        y = rect.top + rect.height / 2
-      } else {
-        x = window.innerWidth / 2
-        y = window.innerHeight / 2
-      }
-    }
-
-    // Calculate maximum radius to fully cover the furthest viewport corner
-    const endRadius = Math.hypot(
-      Math.max(x, window.innerWidth - x),
-      Math.max(y, window.innerHeight - y)
-    )
-
-    const transition = doc.startViewTransition(() => {
-      isDarkMode.value = !isDarkMode.value
-      if (typeof localStorage !== 'undefined') {
-        localStorage.setItem('theme', isDarkMode.value ? 'dark' : 'light')
-      }
-      updateTheme()
-    })
-
-    transition.ready.then(() => {
-      doc.documentElement.animate(
-        {
-          clipPath: [
-            `circle(0px at ${x}px ${y}px)`,
-            `circle(${endRadius}px at ${x}px ${y}px)`
-          ]
-        },
-        {
-          duration: 500,
-          easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
-          pseudoElement: '::view-transition-new(root)'
-        }
-      )
-    })
+    updateTheme()
   }
 
   onMounted(() => {
@@ -89,6 +35,7 @@ export const useTheme = () => {
           isDarkMode.value = window.matchMedia('(prefers-color-scheme: dark)').matches
         }
       } catch {
+        // Fallback if localStorage or matchMedia is restricted
         isDarkMode.value = false
       }
       updateTheme()
