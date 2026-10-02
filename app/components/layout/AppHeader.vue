@@ -44,7 +44,12 @@
           <img
             src="/logos/main-logo-2.png"
             alt="Cana Gardens Logo"
-            class="brand-logo-img"
+            class="brand-logo-img logo-light"
+          />
+          <img
+            src="/logos/main-logo-transparent.png"
+            alt="Cana Gardens Logo"
+            class="brand-logo-img logo-dark"
           />
         </NuxtLink>
 
@@ -321,6 +326,18 @@ html.dark .top-bar {
   object-fit: contain;
   display: block;
   transition: height var(--transition-normal), transform var(--transition-fast);
+}
+
+.brand-logo-img.logo-dark {
+  display: none;
+}
+
+html.dark .brand-logo-img.logo-light {
+  display: none;
+}
+
+html.dark .brand-logo-img.logo-dark {
+  display: block;
 }
 
 .site-header.scrolled .brand-logo-img {
