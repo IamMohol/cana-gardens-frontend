@@ -74,7 +74,7 @@
         <!-- Header Actions -->
         <div class="header-actions">
           <button
-            @click="toggleTheme"
+            @click="toggleTheme($event)"
             class="theme-toggle"
             :aria-label="
               isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'
@@ -394,34 +394,65 @@ html.dark .nav-list a.active {
 .theme-toggle {
   background: transparent;
   border: 1px solid var(--color-border);
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--color-primary-900);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+  transition: background-color var(--transition-fast),
+              border-color var(--transition-fast),
+              transform var(--transition-fast),
+              box-shadow var(--transition-fast);
 }
 
-html.dark .theme-toggle {
-  color: #f0f7f1;
-  border-color: rgba(255, 255, 255, 0.15);
+.theme-toggle i {
+  display: inline-block;
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
+              color var(--transition-fast);
 }
 
 .theme-toggle:hover {
   background: rgba(0, 0, 0, 0.05);
-  transform: scale(1.05);
+  transform: translateY(-1px) scale(1.06);
+  box-shadow: 0 4px 12px rgba(16, 42, 32, 0.08);
 }
 
-html.dark .theme-toggle:hover {
-  background: rgba(255, 255, 255, 0.1);
+.theme-toggle:hover i {
+  transform: rotate(20deg) scale(1.1);
 }
 
 .theme-toggle:active {
-  transform: scale(0.95);
+  transform: translateY(0) scale(0.92);
+}
+
+html.dark .theme-toggle {
+  color: var(--color-accent-400);
+  border-color: rgba(157, 194, 30, 0.35);
+  background: rgba(157, 194, 30, 0.06);
+}
+
+html.dark .theme-toggle:hover {
+  background: rgba(157, 194, 30, 0.15);
+  border-color: var(--color-accent-500);
+  box-shadow: 0 0 16px rgba(157, 194, 30, 0.28);
+}
+
+html.dark .theme-toggle:hover i {
+  transform: rotate(-25deg) scale(1.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle,
+  .theme-toggle i {
+    transition: none !important;
+    transform: none !important;
+  }
 }
 
 .mobile-toggle {
