@@ -215,24 +215,24 @@ useSeoMeta({
 }
 
 /* Dark Mode Overrides */
-:global(html.dark) .story-section {
+html.dark .story-section {
   background-color: var(--color-bg-light);
 }
 
-:global(html.dark) .hl-box {
+html.dark .hl-box {
   background: var(--color-bg-card);
   border-color: var(--color-border);
 }
 
-:global(html.dark) .hl-box strong {
+html.dark .hl-box strong {
   color: var(--color-heading);
 }
 
-:global(html.dark) .hl-box i {
+html.dark .hl-box i {
   color: var(--color-accent-400);
 }
 
-:global(html.dark) .metrics-section {
+html.dark .metrics-section {
   background-color: #0f1a10;
   border-color: var(--color-border);
 }

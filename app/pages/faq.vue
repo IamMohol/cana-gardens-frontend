@@ -309,31 +309,31 @@ useSeoMeta({
 }
 
 /* Dark Mode Overrides */
-:global(html.dark) .faq-sidebar .help-box {
+html.dark .faq-sidebar .help-box {
   background: var(--color-bg-card);
   border-color: var(--color-border);
 }
 
-:global(html.dark) .faq-card {
+html.dark .faq-card {
   background: var(--color-bg-card);
   border-color: var(--color-border);
 }
 
-:global(html.dark) .faq-card.is-open {
+html.dark .faq-card.is-open {
   border-color: var(--color-accent-500);
 }
 
-:global(html.dark) .toggle-icon {
+html.dark .toggle-icon {
   background: rgba(255, 255, 255, 0.08);
   color: var(--color-accent-400);
 }
 
-:global(html.dark) .faq-card.is-open .toggle-icon {
+html.dark .faq-card.is-open .toggle-icon {
   background: var(--color-accent-500);
   color: #0d1c0f;
 }
 
-:global(html.dark) .faq-bottom-cta {
+html.dark .faq-bottom-cta {
   background-color: #0f1a10;
   border-color: var(--color-border);
 }

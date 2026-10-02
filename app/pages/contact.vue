@@ -680,77 +680,77 @@ useSeoMeta({
 }
 
 /* Dark Mode Overrides */
-:global(html.dark) .info-card {
+html.dark .info-card {
   background: var(--color-bg-card);
   border-color: var(--color-border);
 }
 
-:global(html.dark) .card-icon {
+html.dark .card-icon {
   background: rgba(157, 194, 30, 0.15);
   color: var(--color-accent-400);
   border: 1px solid rgba(157, 194, 30, 0.25);
 }
 
-:global(html.dark) .card-body a {
+html.dark .card-body a {
   color: var(--color-accent-400);
 }
 
-:global(html.dark) .contact-form-card {
+html.dark .contact-form-card {
   background: var(--color-bg-card);
   border-color: var(--color-border);
 }
 
-:global(html.dark) .form-badge {
+html.dark .form-badge {
   color: var(--color-accent-400);
 }
 
-:global(html.dark) .form-group label {
+html.dark .form-group label {
   color: var(--color-heading);
 }
 
-:global(html.dark) .form-group input,
-:global(html.dark) .form-group select,
-:global(html.dark) .form-group textarea {
+html.dark .form-group input,
+html.dark .form-group select,
+html.dark .form-group textarea {
   background: var(--color-bg-light);
   border-color: var(--color-border);
   color: #f0f7f1;
 }
 
-:global(html.dark) .form-group input:focus,
-:global(html.dark) .form-group select:focus,
-:global(html.dark) .form-group textarea:focus {
+html.dark .form-group input:focus,
+html.dark .form-group select:focus,
+html.dark .form-group textarea:focus {
   border-color: var(--color-accent-500);
   background-color: var(--color-bg-card);
 }
 
-:global(html.dark) .form-group.has-error input,
-:global(html.dark) .form-group.has-error select,
-:global(html.dark) .form-group.has-error textarea {
+html.dark .form-group.has-error input,
+html.dark .form-group.has-error select,
+html.dark .form-group.has-error textarea {
   background: rgba(220, 38, 38, 0.1);
   border-color: #ef4444;
 }
 
-:global(html.dark) .form-error-banner {
+html.dark .form-error-banner {
   background: rgba(220, 38, 38, 0.15);
   color: #fca5a5;
   border: 1px solid rgba(220, 38, 38, 0.3);
 }
 
-:global(html.dark) .form-success-banner {
+html.dark .form-success-banner {
   background: rgba(157, 194, 30, 0.1);
   border-color: rgba(157, 194, 30, 0.25);
   color: #f0f7f1;
 }
 
-:global(html.dark) .success-content h4 {
+html.dark .success-content h4 {
   color: #f0f7f1;
 }
 
-:global(html.dark) .success-content p {
+html.dark .success-content p {
   color: var(--color-text-muted);
 }
 
-:global(html.dark) .ref-badge {
+html.dark .ref-badge {
   background: rgba(157, 194, 30, 0.18);
   color: var(--color-accent-300);
 }

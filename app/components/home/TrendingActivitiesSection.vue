@@ -220,24 +220,24 @@ defineEmits(['open-booking'])
 }
 
 /* Dark Mode Overrides */
-:global(html.dark) .trending-section {
+html.dark .trending-section {
   background-color: var(--color-bg-sand);
 }
 
-:global(html.dark) .eyebrow-tag {
+html.dark .eyebrow-tag {
   color: var(--color-accent-400);
 }
 
-:global(html.dark) .cta-card {
+html.dark .cta-card {
   border: 1px solid var(--color-border);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
 }
 
-:global(html.dark) .cta-icon {
+html.dark .cta-icon {
   color: var(--color-accent-400);
 }
 
-:global(html.dark) .cta-link {
+html.dark .cta-link {
   color: var(--color-accent-300);
 }
 

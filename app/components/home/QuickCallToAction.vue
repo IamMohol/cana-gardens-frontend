@@ -101,13 +101,13 @@ defineEmits(['open-booking'])
   color: var(--color-primary-900);
 }
 
-:global(html.dark) .quick-cta-card {
+html.dark .quick-cta-card {
   background-color: var(--color-bg-card);
   border-color: rgba(157, 194, 30, 0.25);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
-:global(html.dark) .btn-outline-white:hover {
+html.dark .btn-outline-white:hover {
   background: var(--color-accent-500);
   color: #0d1c0f;
   border-color: var(--color-accent-500);

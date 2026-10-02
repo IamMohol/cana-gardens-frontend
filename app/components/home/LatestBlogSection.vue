@@ -244,22 +244,22 @@ const formatDate = (dateStr: string) => {
 }
 
 /* Dark Mode Overrides */
-:global(html.dark) .blog-card {
+html.dark .blog-card {
   background: var(--color-bg-card);
   border-color: var(--color-border);
 }
 
-:global(html.dark) .blog-badge {
+html.dark .blog-badge {
   background: #0f1a10;
   color: var(--color-accent-400);
   border: 1px solid rgba(157, 194, 30, 0.25);
 }
 
-:global(html.dark) .read-more-link {
+html.dark .read-more-link {
   color: var(--color-accent-400);
 }
 
-:global(html.dark) .read-more-link:hover {
+html.dark .read-more-link:hover {
   color: var(--color-accent-300);
 }
 </style>

@@ -519,64 +519,64 @@ onUnmounted(() => {
 }
 
 /* Dark Mode Tokens */
-:global(html.dark) .estate-dossier-section {
+html.dark .estate-dossier-section {
   background-color: var(--color-bg-card);
 }
 
-:global(html.dark) .spec-tile {
+html.dark .spec-tile {
   background-color: rgba(255, 255, 255, 0.03);
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
-:global(html.dark) .spec-tile:hover {
+html.dark .spec-tile:hover {
   border-color: var(--color-accent-500);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
 }
 
-:global(html.dark) .spec-number {
+html.dark .spec-number {
   color: var(--color-accent-400);
 }
 
-:global(html.dark) .spec-title {
+html.dark .spec-title {
   color: #f0f7f1;
 }
 
-:global(html.dark) .spec-description {
+html.dark .spec-description {
   color: rgba(240, 247, 241, 0.72);
 }
 
-:global(html.dark) .tile-tag {
+html.dark .tile-tag {
   background-color: rgba(157, 194, 30, 0.12);
   color: var(--color-accent-400);
 }
 
-:global(html.dark) .visit-highlight-tile {
+html.dark .visit-highlight-tile {
   background-color: var(--color-bg-card);
   border-color: rgba(157, 194, 30, 0.25);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
-:global(html.dark) .visit-hours {
+html.dark .visit-hours {
   color: #f0f7f1;
 }
 
-:global(html.dark) .visit-hours strong {
+html.dark .visit-hours strong {
   color: var(--color-accent-400);
 }
 
-:global(html.dark) .btn-visit-trigger {
+html.dark .btn-visit-trigger {
   background-color: var(--color-accent-500);
   color: #0d1c0f;
   border: none;
   box-shadow: 0 4px 14px rgba(157, 194, 30, 0.25);
 }
 
-:global(html.dark) .btn-visit-trigger i {
+html.dark .btn-visit-trigger i {
   color: #0d1c0f;
 }
 
-:global(html.dark) .btn-visit-trigger:hover {
+html.dark .btn-visit-trigger:hover {
   background-color: var(--color-accent-400);
   box-shadow: 0 8px 22px rgba(157, 194, 30, 0.4);
 }

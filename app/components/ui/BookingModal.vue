@@ -376,43 +376,43 @@ const resetAndClose = () => {
 }
 
 /* Dark Mode Overrides */
-:global(html.dark) .modal-card {
+html.dark .modal-card {
   background-color: var(--color-bg-card);
   border-color: rgba(255, 255, 255, 0.12);
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
 }
 
-:global(html.dark) .modal-header {
+html.dark .modal-header {
   background-color: #0f1a10;
   border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
-:global(html.dark) .form-group label {
+html.dark .form-group label {
   color: var(--color-heading);
 }
 
-:global(html.dark) .form-group input,
-:global(html.dark) .form-group select,
-:global(html.dark) .form-group textarea {
+html.dark .form-group input,
+html.dark .form-group select,
+html.dark .form-group textarea {
   background: var(--color-bg-light);
   border-color: rgba(255, 255, 255, 0.12);
   color: #f0f7f1;
 }
 
-:global(html.dark) .form-group input:focus,
-:global(html.dark) .form-group select:focus,
-:global(html.dark) .form-group textarea:focus {
+html.dark .form-group input:focus,
+html.dark .form-group select:focus,
+html.dark .form-group textarea:focus {
   border-color: var(--color-accent-500);
   background: var(--color-bg-card);
 }
 
-:global(html.dark) .error-banner {
+html.dark .error-banner {
   background: rgba(220, 38, 38, 0.15);
   color: #fca5a5;
   border: 1px solid rgba(220, 38, 38, 0.3);
 }
 
-:global(html.dark) .success-icon-circle {
+html.dark .success-icon-circle {
   background: rgba(157, 194, 30, 0.15);
   color: var(--color-accent-400);
 }

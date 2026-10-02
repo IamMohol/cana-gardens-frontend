@@ -275,20 +275,20 @@ useSeoMeta({
 }
 
 /* Dark Mode Overrides */
-:global(html.dark) .filter-tab {
+html.dark .filter-tab {
   background: var(--color-bg-card);
   color: #f0f7f1;
   border-color: var(--color-border);
 }
 
-:global(html.dark) .filter-tab:hover,
-:global(html.dark) .filter-tab.active {
+html.dark .filter-tab:hover,
+html.dark .filter-tab.active {
   background: var(--color-accent-500);
   color: #0d1c0f;
   border-color: var(--color-accent-500);
 }
 
-:global(html.dark) .gallery-card {
+html.dark .gallery-card {
   background: #112013;
   border: 1px solid var(--color-border);
 }

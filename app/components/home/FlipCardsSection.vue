@@ -491,38 +491,38 @@ onUnmounted(() => {
 }
 
 /* Dark Mode Tokens */
-:global(html.dark) .grounds-overview-section {
+html.dark .grounds-overview-section {
   background-color: var(--color-bg-light);
 }
 
-:global(html.dark) .experience-card {
+html.dark .experience-card {
   background-color: var(--color-bg-card);
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
-:global(html.dark) .experience-card:hover {
+html.dark .experience-card:hover {
   border-color: var(--color-accent-500);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
-:global(html.dark) .card-title {
+html.dark .card-title {
   color: #f0f7f1;
 }
 
-:global(html.dark) .card-description {
+html.dark .card-description {
   color: rgba(240, 247, 241, 0.75);
 }
 
-:global(html.dark) .card-highlights {
+html.dark .card-highlights {
   border-top-color: rgba(255, 255, 255, 0.08);
 }
 
-:global(html.dark) .highlight-item {
+html.dark .highlight-item {
   color: #dff2e1;
 }
 
-:global(html.dark) .unified-cta-dock {
+html.dark .unified-cta-dock {
   background-color: var(--color-bg-card);
   border-color: rgba(157, 194, 30, 0.25);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);

@@ -248,11 +248,11 @@ useSeoMeta({
 }
 
 /* Dark Mode Overrides */
-:global(html.dark) .service-icon-tag {
+html.dark .service-icon-tag {
   color: var(--color-accent-400);
 }
 
-:global(html.dark) .service-features i {
+html.dark .service-features i {
   color: var(--color-accent-400);
 }
 

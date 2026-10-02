@@ -70,7 +70,7 @@ const playVideo = () => {
   border: 1px solid rgba(27, 67, 50, 0.1);
 }
 
-:global(html.dark) .video-wrapper {
+html.dark .video-wrapper {
   border-color: var(--color-border);
 }
 

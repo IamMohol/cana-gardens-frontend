@@ -233,37 +233,37 @@ const sendWhatsApp = () => {
   border-color: var(--color-primary-600);
 }
 
-:global(html.dark) .whatsapp-popup {
+html.dark .whatsapp-popup {
   border-color: var(--color-border);
 }
 
-:global(html.dark) .popup-header {
+html.dark .popup-header {
   background: #0f1a10;
   border-bottom: 1px solid var(--color-border);
 }
 
-:global(html.dark) .popup-body {
+html.dark .popup-body {
   background: var(--color-bg-light);
 }
 
-:global(html.dark) .message-bubble {
+html.dark .message-bubble {
   background: var(--color-bg-card);
   color: var(--color-text-main);
   border: 1px solid var(--color-border);
 }
 
-:global(html.dark) .popup-footer {
+html.dark .popup-footer {
   background: var(--color-bg-card);
   border-top-color: var(--color-border);
 }
 
-:global(html.dark) .popup-footer input {
+html.dark .popup-footer input {
   background: var(--color-bg-light);
   border-color: var(--color-border);
   color: #f0f7f1;
 }
 
-:global(html.dark) .popup-footer input:focus {
+html.dark .popup-footer input:focus {
   border-color: var(--color-accent-500);
 }
 

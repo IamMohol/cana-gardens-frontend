@@ -753,44 +753,44 @@ onUnmounted(() => {
 }
 
 /* Dark Mode Overrides */
-:global(html.dark) .cloud-corner,
-:global(html.dark) .carousel-cloud {
+html.dark .cloud-corner,
+html.dark .carousel-cloud {
   display: none !important;
   opacity: 0 !important;
 }
 
-:global(html.dark) .vine-corner {
+html.dark .vine-corner {
   color: var(--color-primary-700);
   opacity: 0.2;
 }
 
-:global(html.dark) .hero-badge {
+html.dark .hero-badge {
   background: rgba(157, 194, 30, 0.15);
   color: var(--color-accent-400);
   border: 1px solid rgba(157, 194, 30, 0.25);
 }
 
-:global(html.dark) .hero-stats {
+html.dark .hero-stats {
   border-top-color: var(--color-border);
 }
 
-:global(html.dark) .carousel-card {
+html.dark .carousel-card {
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
 }
 
-:global(html.dark) .carousel-card:hover {
+html.dark .carousel-card:hover {
   box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7);
 }
 
-:global(html.dark) .carousel-btn {
+html.dark .carousel-btn {
   background: rgba(19, 34, 21, 0.9);
   color: var(--color-text-main);
   border: 1px solid var(--color-border);
 }
 
-:global(html.dark) .carousel-btn:hover {
+html.dark .carousel-btn:hover {
   background: var(--color-accent-500);
   color: #0d1c0f;
 }

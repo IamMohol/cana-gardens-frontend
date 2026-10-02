@@ -261,21 +261,21 @@ useSeoMeta({
 }
 
 /* Dark Mode Overrides */
-:global(html.dark) .back-link {
+html.dark .back-link {
   color: var(--color-accent-400);
 }
 
-:global(html.dark) .category-pill {
+html.dark .category-pill {
   background: rgba(157, 194, 30, 0.15);
   color: var(--color-accent-400);
   border: 1px solid rgba(157, 194, 30, 0.25);
 }
 
-:global(html.dark) .lead-text {
+html.dark .lead-text {
   color: var(--color-heading);
 }
 
-:global(html.dark) .cta-inquiry-box {
+html.dark .cta-inquiry-box {
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
 }
