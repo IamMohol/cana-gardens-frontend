@@ -383,11 +383,7 @@ onUnmounted(() => {
 <style scoped>
 .hero-section {
   position: relative;
-  background: linear-gradient(
-    135deg,
-    var(--color-bg-light) 0%,
-    var(--color-bg-card) 100%
-  );
+  background-color: var(--color-bg-light);
   padding: 4.5rem 0 7rem;
   overflow: hidden;
 }
@@ -509,7 +505,7 @@ onUnmounted(() => {
 .hero-title {
   font-family: var(--font-serif);
   font-size: clamp(2.6rem, 5vw, 4.2rem);
-  color: var(--color-primary-950);
+  color: var(--color-heading-hero);
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -525,7 +521,7 @@ onUnmounted(() => {
 .hero-divider-line {
   height: 2px;
   width: 60px;
-  background: var(--color-gold-400);
+  background: var(--color-accent-500);
 }
 
 .hero-divider-cursive {
@@ -565,7 +561,7 @@ onUnmounted(() => {
 .stat-box strong {
   font-family: var(--font-serif);
   font-size: 1.6rem;
-  color: var(--color-primary-900);
+  color: var(--color-heading);
 }
 
 .stat-box span {
@@ -689,12 +685,12 @@ onUnmounted(() => {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 5rem 1.5rem 4rem; /* Extra padding for gradient and controls */
+  padding: 5rem 1.5rem 4rem; /* Extra padding for scrim and controls */
   background: linear-gradient(
     to top,
-    rgba(53, 105, 57, 0.95),
-    /* Brand Deep Green */ rgba(53, 105, 57, 0.4),
-    transparent
+    rgba(13, 22, 14, 0.92) 0%,
+    rgba(13, 22, 14, 0.35) 60%,
+    transparent 100%
   );
   color: #ffffff;
   font-size: 1.15rem;
@@ -753,7 +749,50 @@ onUnmounted(() => {
 .dot.active {
   width: 22px;
   border-radius: 4px;
-  background: var(--color-gold-400);
+  background: var(--color-accent-500);
+}
+
+/* Dark Mode Overrides */
+:global(html.dark) .cloud-corner,
+:global(html.dark) .carousel-cloud {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+:global(html.dark) .vine-corner {
+  color: var(--color-primary-700);
+  opacity: 0.2;
+}
+
+:global(html.dark) .hero-badge {
+  background: rgba(157, 194, 30, 0.15);
+  color: var(--color-accent-400);
+  border: 1px solid rgba(157, 194, 30, 0.25);
+}
+
+:global(html.dark) .hero-stats {
+  border-top-color: var(--color-border);
+}
+
+:global(html.dark) .carousel-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+
+:global(html.dark) .carousel-card:hover {
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7);
+}
+
+:global(html.dark) .carousel-btn {
+  background: rgba(19, 34, 21, 0.9);
+  color: var(--color-text-main);
+  border: 1px solid var(--color-border);
+}
+
+:global(html.dark) .carousel-btn:hover {
+  background: var(--color-accent-500);
+  color: #0d1c0f;
 }
 
 @media (max-width: 960px) {

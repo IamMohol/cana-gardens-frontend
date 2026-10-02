@@ -213,8 +213,8 @@ onUnmounted(() => {
 }
 
 html.dark .site-header {
-  background: rgba(17, 34, 19, 0.92);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(13, 22, 14, 0.94);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .site-header.scrolled {
@@ -231,7 +231,7 @@ html.dark .site-header {
 }
 
 html.dark .top-bar {
-  background: var(--color-bg-base);
+  background: #09100a;
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -433,6 +433,10 @@ html.dark .theme-toggle:hover {
   cursor: pointer;
 }
 
+html.dark .mobile-toggle {
+  color: #f0f7f1;
+}
+
 .mobile-drawer {
   display: none;
   background: var(--color-bg-card);
@@ -477,6 +481,14 @@ html.dark .theme-toggle:hover {
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--color-primary-900);
+  }
+
+  html.dark .mobile-nav-list a {
+    color: #f0f7f1;
+  }
+
+  html.dark .mobile-nav-list a.active {
+    color: var(--color-accent-400);
   }
 }
 </style>

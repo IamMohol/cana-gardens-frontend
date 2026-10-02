@@ -117,7 +117,7 @@ defineEmits(['open-booking'])
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--color-gold-600);
+  color: var(--color-accent-600);
   text-transform: uppercase;
   letter-spacing: 0.15em;
   margin-bottom: 0.5rem;
@@ -217,6 +217,28 @@ defineEmits(['open-booking'])
   color: var(--color-gold-300);
   font-weight: 600;
   opacity: 0.9;
+}
+
+/* Dark Mode Overrides */
+:global(html.dark) .trending-section {
+  background-color: var(--color-bg-sand);
+}
+
+:global(html.dark) .eyebrow-tag {
+  color: var(--color-accent-400);
+}
+
+:global(html.dark) .cta-card {
+  border: 1px solid var(--color-border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+:global(html.dark) .cta-icon {
+  color: var(--color-accent-400);
+}
+
+:global(html.dark) .cta-link {
+  color: var(--color-accent-300);
 }
 
 @media (max-width: 960px) {

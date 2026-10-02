@@ -1,15 +1,17 @@
 import { ref, onMounted } from 'vue'
 
-export const useTheme = () => {
-  const isDarkMode = ref(false)
+const isDarkMode = ref(false)
 
+export const useTheme = () => {
   const updateTheme = () => {
-    if (isDarkMode.value) {
-      document.documentElement.classList.add('dark')
-      localStorage.setItem('theme', 'dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-      localStorage.setItem('theme', 'light')
+    if (typeof document !== 'undefined') {
+      if (isDarkMode.value) {
+        document.documentElement.classList.add('dark')
+        localStorage.setItem('theme', 'dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+        localStorage.setItem('theme', 'light')
+      }
     }
   }
 

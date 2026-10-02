@@ -102,14 +102,15 @@ useSeoMeta({
 
 <style scoped>
 .page-hero {
-  background: linear-gradient(135deg, var(--color-primary-950), var(--color-primary-900));
+  background-color: var(--color-surface-dark);
   color: #ffffff;
   padding: 5rem 0 4rem;
   text-align: center;
+  border-bottom: 1px solid var(--color-surface-dark-border);
 }
 
 .page-hero .eyebrow {
-  color: var(--color-gold-400);
+  color: var(--color-accent-400);
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -165,6 +166,7 @@ useSeoMeta({
   background: var(--color-bg-sand);
   padding: 0.9rem 1.2rem;
   border-radius: var(--radius-md);
+  border: 1px solid transparent;
 }
 
 .hl-box i {
@@ -184,9 +186,11 @@ useSeoMeta({
 }
 
 .metrics-section {
-  background: var(--color-primary-950);
+  background-color: var(--color-surface-dark);
   color: #ffffff;
   padding: 4rem 0;
+  border-top: 1px solid var(--color-surface-dark-border);
+  border-bottom: 1px solid var(--color-surface-dark-border);
 }
 
 .metrics-grid {
@@ -199,7 +203,7 @@ useSeoMeta({
 .metric-item h3 {
   font-family: var(--font-serif);
   font-size: 3rem;
-  color: var(--color-gold-400);
+  color: var(--color-accent-400);
   margin-bottom: 0.3rem;
 }
 
@@ -208,6 +212,29 @@ useSeoMeta({
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* Dark Mode Overrides */
+:global(html.dark) .story-section {
+  background-color: var(--color-bg-light);
+}
+
+:global(html.dark) .hl-box {
+  background: var(--color-bg-card);
+  border-color: var(--color-border);
+}
+
+:global(html.dark) .hl-box strong {
+  color: var(--color-heading);
+}
+
+:global(html.dark) .hl-box i {
+  color: var(--color-accent-400);
+}
+
+:global(html.dark) .metrics-section {
+  background-color: #0f1a10;
+  border-color: var(--color-border);
 }
 
 @media (max-width: 768px) {

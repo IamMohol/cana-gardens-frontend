@@ -439,8 +439,8 @@ onUnmounted(() => {
 
 /* Highlight Visit Tile */
 .visit-highlight-tile {
-  background: linear-gradient(135deg, rgba(53, 105, 57, 0.07), rgba(157, 194, 30, 0.12));
-  border: 1px solid rgba(157, 194, 30, 0.35);
+  background-color: rgba(53, 105, 57, 0.05);
+  border: 1px solid rgba(53, 105, 57, 0.14);
 }
 
 .visit-tile-inner {
@@ -485,7 +485,7 @@ onUnmounted(() => {
   font-size: 0.9rem;
   font-weight: 600;
   font-family: var(--font-sans);
-  background: linear-gradient(135deg, var(--color-primary-800), var(--color-primary-900));
+  background-color: var(--color-primary-800);
   color: #ffffff;
   border: 1px solid rgba(157, 194, 30, 0.3);
   border-radius: var(--radius-full);
@@ -496,7 +496,7 @@ onUnmounted(() => {
   gap: 0.55rem;
   transition: transform var(--transition-normal),
               box-shadow var(--transition-normal),
-              background var(--transition-normal);
+              background-color var(--transition-normal);
 }
 
 .btn-visit-trigger i {
@@ -506,7 +506,7 @@ onUnmounted(() => {
 
 .btn-visit-trigger:hover {
   transform: translateY(-2px);
-  background: linear-gradient(135deg, var(--color-primary-900), var(--color-primary-950));
+  background-color: var(--color-primary-700);
   box-shadow: 0 8px 20px rgba(53, 105, 57, 0.3);
 }
 
@@ -552,8 +552,9 @@ onUnmounted(() => {
 }
 
 :global(html.dark) .visit-highlight-tile {
-  background: linear-gradient(135deg, rgba(53, 105, 57, 0.2), rgba(157, 194, 30, 0.1));
-  border-color: rgba(157, 194, 30, 0.3);
+  background-color: var(--color-bg-card);
+  border-color: rgba(157, 194, 30, 0.25);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 :global(html.dark) .visit-hours {
@@ -565,18 +566,18 @@ onUnmounted(() => {
 }
 
 :global(html.dark) .btn-visit-trigger {
-  background: linear-gradient(135deg, var(--color-accent-500), var(--color-accent-400));
-  color: var(--color-primary-950);
+  background-color: var(--color-accent-500);
+  color: #0d1c0f;
   border: none;
   box-shadow: 0 4px 14px rgba(157, 194, 30, 0.25);
 }
 
 :global(html.dark) .btn-visit-trigger i {
-  color: var(--color-primary-950);
+  color: #0d1c0f;
 }
 
 :global(html.dark) .btn-visit-trigger:hover {
-  background: linear-gradient(135deg, var(--color-accent-400), var(--color-accent-300));
+  background-color: var(--color-accent-400);
   box-shadow: 0 8px 22px rgba(157, 194, 30, 0.4);
 }
 

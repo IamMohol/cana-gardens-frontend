@@ -261,12 +261,13 @@ const resetAndClose = () => {
 }
 
 .modal-header {
-  background: linear-gradient(135deg, var(--color-primary-950), var(--color-primary-900));
+  background-color: var(--color-surface-dark);
   color: #ffffff;
   padding: 1.8rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  border-bottom: 1px solid var(--color-surface-dark-border);
 }
 
 .modal-badge {
@@ -352,7 +353,7 @@ const resetAndClose = () => {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--color-gold-500);
+  border-color: var(--color-accent-500);
   background: var(--color-bg-card);
 }
 
@@ -372,6 +373,48 @@ const resetAndClose = () => {
   margin-top: 1.8rem;
   padding-top: 1.2rem;
   border-top: 1px solid var(--color-border);
+}
+
+/* Dark Mode Overrides */
+:global(html.dark) .modal-card {
+  background-color: var(--color-bg-card);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+}
+
+:global(html.dark) .modal-header {
+  background-color: #0f1a10;
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+:global(html.dark) .form-group label {
+  color: var(--color-heading);
+}
+
+:global(html.dark) .form-group input,
+:global(html.dark) .form-group select,
+:global(html.dark) .form-group textarea {
+  background: var(--color-bg-light);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #f0f7f1;
+}
+
+:global(html.dark) .form-group input:focus,
+:global(html.dark) .form-group select:focus,
+:global(html.dark) .form-group textarea:focus {
+  border-color: var(--color-accent-500);
+  background: var(--color-bg-card);
+}
+
+:global(html.dark) .error-banner {
+  background: rgba(220, 38, 38, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+}
+
+:global(html.dark) .success-icon-circle {
+  background: rgba(157, 194, 30, 0.15);
+  color: var(--color-accent-400);
 }
 
 /* Success State */

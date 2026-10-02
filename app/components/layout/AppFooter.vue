@@ -194,13 +194,9 @@ html.dark .site-footer {
 
 /* Serene Invitation Pre-Footer Band */
 .footer-invitation-band {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   padding: 3rem 0;
-  background: linear-gradient(
-    180deg,
-    rgba(53, 105, 57, 0.22) 0%,
-    rgba(26, 51, 28, 0) 100%
-  );
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .invitation-container {
@@ -245,7 +241,7 @@ html.dark .site-footer {
 
 .btn-invitation {
   background: var(--color-accent-500);
-  color: var(--color-primary-950);
+  color: #0d1c0f;
   font-weight: 600;
   padding: 0.75rem 1.6rem;
   border-radius: var(--radius-full);

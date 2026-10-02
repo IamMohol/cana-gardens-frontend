@@ -404,11 +404,11 @@ onUnmounted(() => {
 /* Single Unified Section Call to Action Dock */
 .unified-cta-dock {
   margin-top: 2.75rem;
-  background: linear-gradient(135deg, var(--color-primary-950), var(--color-primary-900));
-  border: 1px solid rgba(157, 194, 30, 0.25);
+  background-color: var(--color-surface-dark);
+  border: 1px solid var(--color-surface-dark-border);
   border-radius: var(--radius-lg);
   padding: 2rem 2.5rem;
-  box-shadow: 0 16px 36px rgba(26, 51, 28, 0.18);
+  box-shadow: 0 12px 30px rgba(10, 20, 11, 0.12);
   position: relative;
   overflow: hidden;
   
@@ -424,36 +424,6 @@ onUnmounted(() => {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.45s;
-}
-
-/* Ambient Botanical Glow Animation */
-.unified-cta-dock::before {
-  content: "";
-  position: absolute;
-  top: -40px;
-  right: -40px;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(157, 194, 30, 0.22) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-  opacity: 0.5;
-  transition: opacity 1s ease;
-}
-
-@keyframes ctaAmbientBreathe {
-  0%, 100% {
-    transform: scale(1) translate(0, 0);
-    opacity: 0.35;
-  }
-  50% {
-    transform: scale(1.15) translate(-8px, 8px);
-    opacity: 0.65;
-  }
-}
-
-.is-revealed .unified-cta-dock::before {
-  animation: ctaAmbientBreathe 7s ease-in-out infinite;
 }
 
 .cta-content-wrapper {
@@ -489,12 +459,12 @@ onUnmounted(() => {
   padding: 0.85rem 1.85rem;
   font-size: 0.95rem;
   font-weight: 600;
-  background: linear-gradient(135deg, var(--color-accent-500), var(--color-accent-400));
-  color: var(--color-primary-950);
+  background-color: var(--color-accent-500);
+  color: #0d1c0f;
   border: none;
   border-radius: var(--radius-full);
-  box-shadow: 0 4px 14px rgba(157, 194, 30, 0.35);
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  box-shadow: 0 4px 14px rgba(157, 194, 30, 0.25);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), background-color var(--transition-normal);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -507,8 +477,9 @@ onUnmounted(() => {
 
 .cta-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(157, 194, 30, 0.5);
-  color: var(--color-primary-950);
+  background-color: var(--color-accent-400);
+  box-shadow: 0 8px 22px rgba(157, 194, 30, 0.35);
+  color: #0d1c0f;
 }
 
 .cta-btn:hover i {
@@ -552,8 +523,9 @@ onUnmounted(() => {
 }
 
 :global(html.dark) .unified-cta-dock {
-  background: linear-gradient(135deg, #0d1a0e, #142a17);
-  border-color: rgba(157, 194, 30, 0.3);
+  background-color: var(--color-bg-card);
+  border-color: rgba(157, 194, 30, 0.25);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive Breakpoints */

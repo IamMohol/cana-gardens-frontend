@@ -148,7 +148,7 @@ const formatDate = (dateStr: string) => {
 .blog-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--color-gold-400);
+  border-color: var(--color-accent-500);
 }
 
 .blog-thumb-link {
@@ -214,7 +214,7 @@ const formatDate = (dateStr: string) => {
 }
 
 .blog-title a:hover {
-  color: var(--color-gold-600);
+  color: var(--color-accent-500);
 }
 
 .blog-excerpt {
@@ -234,12 +234,32 @@ const formatDate = (dateStr: string) => {
 }
 
 .read-more-link:hover {
-  color: var(--color-gold-600);
+  color: var(--color-accent-500);
   transform: translateX(3px);
 }
 
 .blog-footer-cta {
   text-align: center;
   margin-top: 3.5rem;
+}
+
+/* Dark Mode Overrides */
+:global(html.dark) .blog-card {
+  background: var(--color-bg-card);
+  border-color: var(--color-border);
+}
+
+:global(html.dark) .blog-badge {
+  background: #0f1a10;
+  color: var(--color-accent-400);
+  border: 1px solid rgba(157, 194, 30, 0.25);
+}
+
+:global(html.dark) .read-more-link {
+  color: var(--color-accent-400);
+}
+
+:global(html.dark) .read-more-link:hover {
+  color: var(--color-accent-300);
 }
 </style>

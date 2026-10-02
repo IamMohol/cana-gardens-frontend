@@ -119,14 +119,15 @@ useSeoMeta({
 
 <style scoped>
 .page-hero {
-  background: linear-gradient(135deg, var(--color-primary-950), var(--color-primary-900));
+  background-color: var(--color-surface-dark);
   color: #ffffff;
   padding: 5rem 0 4rem;
   text-align: center;
+  border-bottom: 1px solid var(--color-surface-dark-border);
 }
 
 .page-hero .eyebrow {
-  color: var(--color-gold-400);
+  color: var(--color-accent-400);
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -150,6 +151,7 @@ useSeoMeta({
 
 .blog-list-section {
   padding: 5rem 0 7rem;
+  background-color: var(--color-bg-light);
 }
 
 .blog-card {
@@ -166,7 +168,7 @@ useSeoMeta({
 .blog-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--color-gold-400);
+  border-color: var(--color-accent-500);
 }
 
 .blog-thumb {
@@ -227,7 +229,7 @@ useSeoMeta({
 }
 
 .blog-title a:hover {
-  color: var(--color-gold-600);
+  color: var(--color-accent-500);
 }
 
 .blog-excerpt {
@@ -245,6 +247,22 @@ useSeoMeta({
 }
 
 .read-more-link:hover {
-  color: var(--color-gold-600);
+  color: var(--color-accent-500);
+}
+
+/* Dark Mode Overrides */
+:global(html.dark) .blog-card {
+  background: var(--color-bg-card);
+  border-color: var(--color-border);
+}
+
+:global(html.dark) .blog-badge {
+  background: #0f1a10;
+  color: var(--color-accent-400);
+  border: 1px solid rgba(157, 194, 30, 0.25);
+}
+
+:global(html.dark) .read-more-link {
+  color: var(--color-accent-400);
 }
 </style>

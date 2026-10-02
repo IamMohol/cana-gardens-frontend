@@ -141,14 +141,15 @@ useSeoMeta({
 
 <style scoped>
 .page-hero {
-  background: linear-gradient(135deg, var(--color-primary-950), var(--color-primary-900));
+  background-color: var(--color-surface-dark);
   color: #ffffff;
   padding: 5rem 0 4rem;
   text-align: center;
+  border-bottom: 1px solid var(--color-surface-dark-border);
 }
 
 .page-hero .eyebrow {
-  color: var(--color-gold-400);
+  color: var(--color-accent-400);
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -173,6 +174,7 @@ useSeoMeta({
 
 .faq-section {
   padding: 5rem 0 6rem;
+  background-color: var(--color-bg-light);
 }
 
 .faq-layout {
@@ -202,7 +204,7 @@ useSeoMeta({
 .help-box h3 {
   font-family: var(--font-serif);
   font-size: 1.6rem;
-  color: var(--color-primary-950);
+  color: var(--color-heading);
   margin-bottom: 0.75rem;
 }
 
@@ -255,7 +257,7 @@ useSeoMeta({
 .question-text {
   font-family: var(--font-serif);
   font-size: 1.15rem;
-  color: var(--color-primary-950);
+  color: var(--color-heading);
   font-weight: 600;
 }
 
@@ -286,10 +288,11 @@ useSeoMeta({
 }
 
 .faq-bottom-cta {
-  background: linear-gradient(135deg, var(--color-primary-950), var(--color-primary-900));
+  background-color: var(--color-surface-dark);
   color: #ffffff;
   padding: 4.5rem 0;
   text-align: center;
+  border-top: 1px solid var(--color-surface-dark-border);
 }
 
 .faq-bottom-cta h2 {
@@ -303,6 +306,36 @@ useSeoMeta({
   color: rgba(255, 255, 255, 0.85);
   font-size: 1.05rem;
   margin-bottom: 1.8rem;
+}
+
+/* Dark Mode Overrides */
+:global(html.dark) .faq-sidebar .help-box {
+  background: var(--color-bg-card);
+  border-color: var(--color-border);
+}
+
+:global(html.dark) .faq-card {
+  background: var(--color-bg-card);
+  border-color: var(--color-border);
+}
+
+:global(html.dark) .faq-card.is-open {
+  border-color: var(--color-accent-500);
+}
+
+:global(html.dark) .toggle-icon {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-accent-400);
+}
+
+:global(html.dark) .faq-card.is-open .toggle-icon {
+  background: var(--color-accent-500);
+  color: #0d1c0f;
+}
+
+:global(html.dark) .faq-bottom-cta {
+  background-color: #0f1a10;
+  border-color: var(--color-border);
 }
 
 @media (max-width: 900px) {

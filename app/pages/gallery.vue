@@ -139,14 +139,15 @@ useSeoMeta({
 
 <style scoped>
 .page-hero {
-  background: linear-gradient(135deg, var(--color-primary-950), var(--color-primary-900));
+  background-color: var(--color-surface-dark);
   color: #ffffff;
   padding: 5rem 0 4rem;
   text-align: center;
+  border-bottom: 1px solid var(--color-surface-dark-border);
 }
 
 .page-hero .eyebrow {
-  color: var(--color-gold-400);
+  color: var(--color-accent-400);
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -170,6 +171,7 @@ useSeoMeta({
 
 .gallery-section {
   padding: 4.5rem 0 6rem;
+  background-color: var(--color-bg-light);
 }
 
 .gallery-filters {
@@ -228,7 +230,7 @@ useSeoMeta({
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(10, 28, 21, 0.2) 0%, rgba(10, 28, 21, 0.85) 100%);
+  background: rgba(10, 20, 12, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,15 +246,15 @@ useSeoMeta({
 }
 
 .gallery-card:hover img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .zoom-icon {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: var(--color-gold-400);
-  color: #ffffff;
+  background: var(--color-accent-500);
+  color: #0d1c0f;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -266,10 +268,29 @@ useSeoMeta({
 }
 
 .item-cat {
-  color: var(--color-gold-300);
+  color: var(--color-accent-300);
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+/* Dark Mode Overrides */
+:global(html.dark) .filter-tab {
+  background: var(--color-bg-card);
+  color: #f0f7f1;
+  border-color: var(--color-border);
+}
+
+:global(html.dark) .filter-tab:hover,
+:global(html.dark) .filter-tab.active {
+  background: var(--color-accent-500);
+  color: #0d1c0f;
+  border-color: var(--color-accent-500);
+}
+
+:global(html.dark) .gallery-card {
+  background: #112013;
+  border: 1px solid var(--color-border);
 }
 
 /* Lightbox Modal */

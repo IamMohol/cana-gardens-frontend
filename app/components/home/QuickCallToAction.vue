@@ -37,7 +37,7 @@ defineEmits(['open-booking'])
 }
 
 .quick-cta-card {
-  background: linear-gradient(135deg, var(--color-primary-950) 0%, var(--color-primary-800) 100%);
+  background-color: var(--color-surface-dark);
   border-radius: var(--radius-lg);
   padding: 3.5rem 3rem;
   color: #ffffff;
@@ -45,7 +45,7 @@ defineEmits(['open-booking'])
   justify-content: space-between;
   align-items: center;
   box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(197, 155, 39, 0.3);
+  border: 1px solid var(--color-surface-dark-border);
 }
 
 .cta-tag {
@@ -99,6 +99,18 @@ defineEmits(['open-booking'])
 .btn-outline-white:hover {
   background: var(--color-bg-card);
   color: var(--color-primary-900);
+}
+
+:global(html.dark) .quick-cta-card {
+  background-color: var(--color-bg-card);
+  border-color: rgba(157, 194, 30, 0.25);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+:global(html.dark) .btn-outline-white:hover {
+  background: var(--color-accent-500);
+  color: #0d1c0f;
+  border-color: var(--color-accent-500);
 }
 
 @media (max-width: 900px) {

@@ -31,10 +31,17 @@
   --color-text-muted: #64748b;
   --color-text-light: #94a3b8;
 
+  /* Semantic heading tokens */
+  --color-heading: var(--color-primary-900);
+  --color-heading-hero: var(--color-primary-950);
+
+  /* Clean solid surfaces */
   --color-bg-light: #faf9f6;
   --color-bg-card: #ffffff; /* Brand White */
   --color-bg-sand: #f5f0e6;
   --color-border: #e2e8f0;
+  --color-surface-dark: #162c18;
+  --color-surface-dark-border: rgba(157, 194, 30, 0.2);
 
   /* Typography - Brand Guidelines */
   --font-serif: 'Playfair Display', serif;
@@ -45,7 +52,6 @@
   --shadow-sm: 0 2px 4px rgba(16, 42, 32, 0.02);
   --shadow-md: 0 4px 12px rgba(16, 42, 32, 0.05);
   --shadow-lg: 0 12px 24px rgba(16, 42, 32, 0.08);
-  --shadow-glow: 0 0 20px rgba(197, 155, 39, 0.2);
 
   /* Radius - Softer, modern rounded edges for cards and UI elements */
   --radius-sm: 8px;
@@ -60,26 +66,28 @@
 }
 
 html.dark {
-  /* Dark Mode Typography */
+  /* Dark Mode Typography - Clean, High Contrast WCAG AA/AAA */
   --color-text-main: #f0f7f1;
-  --color-text-muted: #dff2e1;
-  --color-text-light: #7ecc83;
+  --color-text-muted: #9cb19f;
+  --color-text-light: #6f8c72;
   --color-dark: #ffffff;
 
-  /* Dark Mode Backgrounds */
-  --color-bg-light: #0a140b; /* Deep forest black */
-  --color-bg-card: #112213; /* Deep forest green */
-  --color-bg-sand: #0d1a0e;
-  --color-border: #264b29;
+  /* Semantic Headings in Dark Mode */
+  --color-heading: #f0f7f1;
+  --color-heading-hero: #ffffff;
 
-  /* Adjust headings to stand out better on dark backgrounds */
-  --color-primary-900: #9DC234; /* Brand Vibrant Leaf Green for headings */
-  --color-primary-950: #f0f7f1; /* Very light green for main titles */
+  /* Dark Mode Backgrounds - Refined botanical off-black/forest */
+  --color-bg-light: #0d160e;
+  --color-bg-card: #132215;
+  --color-bg-sand: #101c12;
+  --color-border: rgba(255, 255, 255, 0.09);
+  --color-surface-dark: #101c12;
+  --color-surface-dark-border: rgba(255, 255, 255, 0.09);
 
   /* Dark Mode Shadows */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.6);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.55);
 }
 
 *, *::before, *::after {
@@ -91,6 +99,10 @@ html.dark {
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 body {
@@ -105,7 +117,7 @@ body {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
-  color: var(--color-primary-900);
+  color: var(--color-heading);
   line-height: 1.25;
   font-weight: 400;
 }
@@ -167,7 +179,7 @@ img {
 .decorative-line {
   height: 1px;
   width: 70px;
-  background: linear-gradient(90deg, transparent, var(--color-gold-400), transparent);
+  background: var(--color-border);
 }
 
 .decorative-text {
@@ -201,24 +213,33 @@ img {
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-900);
+  background-color: var(--color-primary-700);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(4, 120, 87, 0.25);
   color: #ffffff;
 }
 
+html.dark .btn-primary {
+  background-color: var(--color-primary-800);
+  border: 1px solid rgba(157, 194, 30, 0.3);
+}
+
+html.dark .btn-primary:hover {
+  background-color: var(--color-primary-700);
+}
+
 .btn-gold {
-  background: linear-gradient(135deg, var(--color-gold-500), var(--color-gold-400));
-  color: var(--color-primary-950);
+  background-color: var(--color-accent-500);
+  color: #0d1c0f;
   font-weight: 600;
-  box-shadow: 0 2px 8px rgba(197, 155, 39, 0.2);
+  box-shadow: 0 2px 8px rgba(157, 194, 30, 0.2);
 }
 
 .btn-gold:hover {
-  background: linear-gradient(135deg, var(--color-gold-600), var(--color-gold-500));
+  background-color: var(--color-accent-400);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(197, 155, 39, 0.3);
-  color: var(--color-primary-950);
+  box-shadow: 0 4px 12px rgba(157, 194, 30, 0.35);
+  color: #0d1c0f;
 }
 
 .btn-outline {
@@ -231,6 +252,16 @@ img {
   background-color: var(--color-primary-800);
   color: #ffffff;
   transform: translateY(-1px);
+}
+
+html.dark .btn-outline {
+  color: var(--color-accent-400);
+  border-color: var(--color-accent-400);
+}
+
+html.dark .btn-outline:hover {
+  background-color: var(--color-accent-500);
+  color: #0d1c0f;
 }
 
 .btn-sm {
@@ -275,8 +306,8 @@ img {
 }
 
 .flip-card-front {
-  background: linear-gradient(145deg, #ffffff, #f7f9f8);
-  border: 1px solid rgba(27, 67, 50, 0.08);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
   box-shadow: var(--shadow-sm);
 }
 
@@ -294,16 +325,23 @@ img {
   transition: all var(--transition-normal);
 }
 
+html.dark .flip-card-front .icon-circle {
+  background: rgba(157, 194, 30, 0.1);
+  border-color: var(--color-accent-500);
+  color: var(--color-accent-400);
+}
+
 .flip-card:hover .flip-card-front .icon-circle {
   transform: scale(1.08);
   border-color: var(--color-gold-500);
 }
 
 .flip-card-back {
-  background: linear-gradient(135deg, var(--color-primary-900), var(--color-primary-800));
+  background: var(--color-surface-dark);
   color: #ffffff;
   transform: rotateY(180deg);
   box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-surface-dark-border);
 }
 
 .flip-card-back h3 {

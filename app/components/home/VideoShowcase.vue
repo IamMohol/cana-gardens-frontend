@@ -62,13 +62,16 @@ const playVideo = () => {
 }
 
 .video-wrapper {
-  /* max-width: 1100px; */ /* <--- Uncomment to revert to Option 1 */
-  width: 100%; /* <--- Option 2: Full container width */
+  width: 100%;
   margin: 0 auto;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   border: 1px solid rgba(27, 67, 50, 0.1);
+}
+
+:global(html.dark) .video-wrapper {
+  border-color: var(--color-border);
 }
 
 .video-container {
@@ -93,7 +96,7 @@ const playVideo = () => {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(10, 28, 21, 0.3) 0%, rgba(10, 28, 21, 0.75) 100%);
+  background: rgba(10, 20, 12, 0.52);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +107,7 @@ const playVideo = () => {
 }
 
 .video-overlay:hover {
-  background: linear-gradient(180deg, rgba(10, 28, 21, 0.2) 0%, rgba(10, 28, 21, 0.65) 100%);
+  background: rgba(10, 20, 12, 0.38);
 }
 
 .play-btn-circle {
